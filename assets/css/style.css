@@ -1,0 +1,50 @@
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card-body .card-form{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #0a0909;
+    border-radius: 4px;
+}
+main{
+    padding-top: 2em;
+}
+.grid-container{
+    height: 600px;
+    display: grid;
+    grid-template: 
+    "fechas fechas actividades actividades" 45%
+    "bibliografia bibliografia actividades actividades" 45%
+    "footer footer footer footer" 10% / 1fr 1fr 1fr 1fr; 
+}
+
+.fechas{
+    background-color: aliceblue;
+    grid-area: fechas;
+    padding: 10px;
+}
+
+.bibliografia{
+    background-color: lightblue;
+    grid-area: bibliografia;
+}
+
+.actividades{
+    background-color: lightcyan;
+    grid-area: actividades;
+}
+
+.footer{
+    background-color: rgb(140, 199, 155);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
