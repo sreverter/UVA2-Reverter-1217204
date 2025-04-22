@@ -15,7 +15,7 @@ input{
 }
 main{
     padding-top: 2em;
-        background-color:#113946;
+        background-color:#446d9c;
 }
 .grid-container{
     height: 600px;
@@ -43,7 +43,7 @@ main{
 }
 
 .footer{
-    background-color: rgb(140, 199, 155);
+    background-color: #446d9c;
     grid-area: footer;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ main{
     height: 400px;
     background-size: contain;
     border-radius: 200px;
-    border: solid 8px #bca37f;
+    border: solid 8px #e6c39e;
 }
 .sobremi-container{
     display: flex;
@@ -65,7 +65,7 @@ main{
     height: 600px;
 }
 .button{
-    background-color: #fff2d8;
+    background-color: #e6c39e;
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
@@ -88,7 +88,7 @@ main{
 }
 .sobremi-section{
     display: flex;
-    background-color: #fff2d8;
+    background-color: #e6c39e;
     padding: 35px;
     height: 600px;
 }
