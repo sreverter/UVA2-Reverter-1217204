@@ -15,6 +15,7 @@ input{
 }
 main{
     padding-top: 2em;
+        background-color:#113946;
 }
 .grid-container{
     height: 600px;
@@ -47,4 +48,83 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.image{
+    background-image: url(../img/Foto-perfil.jpg);
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    border-radius: 200px;
+    border: solid 8px #bca37f;
+}
+.sobremi-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    height: 600px;
+}
+.button{
+    background-color: #fff2d8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 9px #737373;
+}
+.button-a{
+    text-decoration: none;
+    color: black;
+
+}
+.card-presentacion{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.sobremi-section{
+    display: flex;
+    background-color: #fff2d8;
+    padding: 35px;
+    height: 600px;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 50px;
+    width: 50%;
+    justify-content: center;
+}
+.skill-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skill-list-item{
+    background-color: #113946;
+    color: white;
+    font-weight: bold;
+    padding: 5px 0px 5px 34px;
+    width: 33%;
+}
+.sobremi-h2{
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
