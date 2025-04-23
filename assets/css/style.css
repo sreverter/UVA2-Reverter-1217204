@@ -42,12 +42,13 @@ main{
     grid-area: actividades;
 }
 
-.footer{
+.footer-grid{
     background-color: #446d9c;
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 .image{
     background-image: url(../img/Foto-perfil.jpg);
@@ -90,7 +91,7 @@ main{
     display: flex;
     background-color: #e6c39e;
     padding: 35px;
-    height: 600px;
+    height: 30em;
 }
 .text-container{
     display: flex;
@@ -99,7 +100,8 @@ main{
     text-align: center;
     margin: 0px 50px;
     width: 50%;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 20px;
 }
 .skill-list{
     list-style: none;
@@ -109,6 +111,7 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 .skill-list-item{
     background-color: #113946;
@@ -121,10 +124,59 @@ main{
     font-weight: 800;
     margin-bottom: 40px;
 }
+.sobremi-text{
+    width: 70%;
+}
 .skill-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
+    padding-top: 20px;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    background-color: #446d9c;
+    color: #fff;
+    gap: 2em;
+    height: 3em;
+    align-items: center;
+}
+.footer-text{
+    margin-bottom: 0px;
+}
+@media (max-width: 768px) {
+    .grid-container{
+        grid-template: 
+        "fechas fechas" 45%
+        "bibliografia bibliografia" 45%
+        "actividades actividades" 45%
+        "footer footer" 10% / 1fr 1fr; 
+    }
+    .text-container{
+        width: 75%;
+        margin: 0px 0px;
+    }
+    .skill-list-item{
+        width: 100%;
+    }
+    .card-presentacion{
+        width: 100%;
+    }
+    .image{
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+    }
+    .skill-container{
+        gap: 0px;
+    }
+    .sobremi-text{
+        margin-bottom: 8px;
+    }
+    .sobremi-h2{
+        margin-bottom: 20px;
+    }
 }
