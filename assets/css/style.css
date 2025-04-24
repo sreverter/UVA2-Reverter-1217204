@@ -14,20 +14,23 @@ input{
     border-radius: 4px;
 }
 main{
-    padding-top: 2em;
-        background-color:#446d9c;
+    background: #446D9C;
+}
+.sobremi-main{
+    background: #446D9C;
+    background: linear-gradient(90deg, rgba(68, 109, 156, 1) 0%, rgba(157, 170, 183, 1) 100%);
 }
 .grid-container{
     height: 600px;
     display: grid;
     grid-template: 
-    "fechas fechas actividades actividades" 45%
-    "bibliografia bibliografia actividades actividades" 45%
-    "footer footer footer footer" 10% / 1fr 1fr 1fr 1fr; 
+    "fechas fechas actividades actividades" 60%
+    "bibliografia bibliografia actividades actividades" 35%
+    "footer footer footer footer" 5% / 1fr 1fr 1fr 1fr; 
 }
 
 .fechas{
-    background-color: aliceblue;
+    background-color: #446d9c;
     grid-area: fechas;
     padding: 10px;
 }
@@ -74,10 +77,21 @@ main{
     text-align: center;
     box-shadow: 2px 2px 9px #737373;
 }
+.button-li{
+    background-color: #e6c39e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 9px #737373;
+}
+.disable{
+    background-color: #9daab7 !important;
+}
 .button-a{
     text-decoration: none;
     color: black;
-
+    width: auto;
 }
 .card-presentacion{
     text-align: center;
@@ -119,6 +133,7 @@ main{
     font-weight: bold;
     padding: 5px 0px 5px 34px;
     width: 33%;
+    border-radius: 10px
 }
 .sobremi-h2{
     font-weight: 800;
@@ -147,13 +162,163 @@ main{
 .footer-text{
     margin-bottom: 0px;
 }
+.main-contacto{
+    height: 100%;
+}
+.fullpage{
+    height: 100%;
+    background-color: #446d9c;
+}
+.footer-blue{
+    padding-top: 1em;
+}
+.footer-brown{
+    background-color: #e6c39e;
+    color: #000;
+}
+.index-table{
+    border: solid 1px #e6c39e;
+    color: white;
+    padding-bottom: 1em;
+}
+.table-header{
+    border-width: 1px;
+}
+.table-body{
+    border-width: 1px;
+}
+tr th{
+    border-width: 1px;
+}
+tr td{
+    border-width: 1px;
+}
+td{
+    padding: 1em;
+    text-align: center;
+}
+th{
+    padding: 1em;
+    text-align: center !important;
+}
+.table-container{
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+.form-container{
+    margin: 1em 0px 1em;
+}
+.table-mobile{
+    display: none;
+}
+.index-table-mobile{
+    border: solid 1px #e6c39e;
+    color: white;
+    padding-bottom: 1em;
+}
+.index-table-desarrollo{
+    border: solid 1px #e6c39e;
+    color: white;
+    padding-bottom: 1em;
+}
+.right-container-mobile{
+    display: none
+}
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subtitle{
+    color: #fff;
+    padding: 1em 2em;
+}
+.subtitle-grid{
+    color: #fff;
+}
+.materias-list{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.banner{
+    height: 23em;
+    background-image: url(../img/programming-code-coding-or-hacker-background-vector.jpg);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    align-items: center;
+}
+.banner-materias{
+    height: 23em;
+    background-image: url(../img/a-man-in-glasses-is-thinking-of-an-idea-in-front-of-a-laptop-hand-drawn-style-design-illustrations-vector.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+}
+.banner-calendario{
+    height: 23em;
+    background-image: url(../img/banner-calendario.webp);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    align-items: center;
+}
+.banner-avisos{
+    height: 23em;
+    background-image: url(../img/1000_F_159086357_bWCGeWFfTWNl9MXbWLV1Mur9yTqezAEQ.jpg);
+    background-size: auto;
+    background-position-y: center;
+    display: flex;
+    align-items: center;
+}
+.title{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    padding-left: 2em;
+    text-shadow: 3px 3px 2px #000000;
+}
+.title-calendario{
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 700;
+    padding-left: 2em;
+    text-shadow: 3px 3px 2px #000000;
+}
+.banner-gradiente{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.15) 100%);
+    position: absolute;
+    height: 23em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.white-link{
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 1024px){
+    td{
+        padding: 0.5em;
+        text-align: center;
+    }
+}
 @media (max-width: 768px) {
     .grid-container{
         grid-template: 
-        "fechas fechas" 45%
-        "bibliografia bibliografia" 45%
-        "actividades actividades" 45%
-        "footer footer" 10% / 1fr 1fr; 
+        "fechas fechas" 55%
+        "bibliografia bibliografia" 20%
+        "actividades actividades" 20%
+        "footer footer" 5% / 1fr 1fr; 
     }
     .text-container{
         width: 75%;
@@ -178,5 +343,97 @@ main{
     }
     .sobremi-h2{
         margin-bottom: 20px;
+    }
+    td{
+        padding: 0.5em;
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .table-mobile{
+        display: block;
+        width: 100%;
+        border: solid 1px #e6c39e;
+        color: white;
+    }
+    .index-table{
+        display: none;
+    }
+    .table-header{
+        display: none;
+    }
+    .footer-brown{
+        text-align: center;
+    }
+    tr th{
+        display: none;
+
+    }
+    tr td{
+        border-width: 1px;
+    }
+    td{
+        padding: 0.3em;
+        text-align: center;
+    }
+    th{
+        padding: 1em;
+        text-align: center !important;
+    }
+    .table-container-mobile{
+        display: none
+    }
+    .sobremi-container{
+        display: none
+    }
+    .sobremi-container-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: white;
+    }
+    .right-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobremi-section{
+        height: 55em;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1em
+    }
+    .skill-list{
+        width: 75%;
+    }
+    .text-container{
+        width: 100%;
+        justify-content: center;
+    }
+    .skill-container{
+        justify-content: center;
+        padding: 0px
+    }
+    .right-container-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    form input{
+        width: 85%;
+    }
+    form textarea{
+        width: 85%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title-calendario{
+        padding-left: 0.5em;
+    }
+    .title{
+        padding-left: 0.5em;
     }
 }
