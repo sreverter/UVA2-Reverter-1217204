@@ -21,12 +21,11 @@ main{
     background: linear-gradient(90deg, rgba(68, 109, 156, 1) 0%, rgba(157, 170, 183, 1) 100%);
 }
 .grid-container{
-    height: 600px;
     display: grid;
     grid-template: 
-    "fechas fechas actividades actividades" 60%
-    "bibliografia bibliografia actividades actividades" 35%
-    "footer footer footer footer" 5% / 1fr 1fr 1fr 1fr; 
+    "fechas fechas actividades actividades" 
+    "bibliografia bibliografia actividades actividades" 
+    "footer footer footer footer" / 1fr 1fr 1fr 1fr; 
 }
 
 .fechas{
@@ -38,20 +37,37 @@ main{
 .bibliografia{
     background-color: lightblue;
     grid-area: bibliografia;
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .actividades{
     background-color: lightcyan;
     grid-area: actividades;
+    padding: 1em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
+.actividades-list{
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
 .footer-grid{
-    background-color: #446d9c;
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    height: 3em;
 }
 .image{
     background-image: url(../img/Foto-perfil.jpg);
@@ -76,6 +92,9 @@ main{
     width: 50%;
     text-align: center;
     box-shadow: 2px 2px 9px #737373;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 .button-li{
     background-color: #e6c39e;
@@ -161,6 +180,7 @@ main{
 }
 .footer-text{
     margin-bottom: 0px;
+    text-align: center;
 }
 .main-contacto{
     height: 100%;
@@ -168,9 +188,6 @@ main{
 .fullpage{
     height: 100%;
     background-color: #446d9c;
-}
-.footer-blue{
-    padding-top: 1em;
 }
 .footer-brown{
     background-color: #e6c39e;
@@ -306,19 +323,51 @@ th{
     color: white;
     text-decoration: none;
 }
+.bibliografia-list{
+    display: flex;
+    gap: 10px;
+    margin-top: 2em;
+}
+.container-avisos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding-bottom: 2em;
+}
+.avisos-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
 @media (max-width: 1024px){
     td{
         padding: 0.5em;
         text-align: center;
     }
+    .bibliografia{
+        padding: 1em 1em;
+    }
+    .bibliografia-list{
+        margin-top: 1em;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+    }
 }
 @media (max-width: 768px) {
     .grid-container{
         grid-template: 
-        "fechas fechas" 55%
-        "bibliografia bibliografia" 20%
-        "actividades actividades" 20%
-        "footer footer" 5% / 1fr 1fr; 
+        "fechas fechas" 
+        "bibliografia bibliografia" 
+        "actividades actividades" 
+        "footer footer" / 1fr 1fr; 
     }
     .text-container{
         width: 75%;
@@ -347,6 +396,12 @@ th{
     td{
         padding: 0.5em;
         text-align: center;
+    }
+    .table-container{
+        padding-bottom: 1em;
+    }
+    .container-avisos{
+        padding: 0 2em 2em 2em;
     }
 }
 @media (max-width: 425px) {
@@ -435,5 +490,37 @@ th{
     }
     .title{
         padding-left: 0.5em;
+    }
+    .bibliografia-list .button{
+        width: 33%;
+        padding: 10px 12px;
+    }
+    .avisos-list{
+        text-align: center;
+    }
+}
+@media (max-width: 320px) {
+    footer{
+        height: 5em;
+    }
+    .footer-container{
+        height: 100%;
+        padding: 1em;
+    }
+    .footer-brown{
+        height: 100%;
+    }
+    .bibliografia-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bibliografia-list .button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-grid{
+        height: 3em;
     }
 }
