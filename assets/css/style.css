@@ -94,7 +94,7 @@ main{
     box-shadow: 2px 2px 9px #737373;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 .button-li{
     background-color: #e6c39e;
@@ -251,6 +251,7 @@ th{
 .subtitle{
     color: #fff;
     padding: 1em 2em;
+    font-size: 2em;
 }
 .subtitle-grid{
     color: #fff;
@@ -264,7 +265,7 @@ th{
     gap: 15px;
     justify-content: center;
 }
-.banner{
+.banner-desarrollo-web{
     height: 23em;
     background-image: url(../img/programming-code-coding-or-hacker-background-vector.jpg);
     background-size: cover;
@@ -344,6 +345,62 @@ th{
     flex-direction: column;
     gap: 15px;
     justify-content: center;
+}
+.otros-proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6c39e;
+}
+.proyecto-grid{
+    display: grid;
+    grid-template: 
+    "proyecto-card proyecto-img proyecto-img" 15em
+    "proyecto-card proyecto-img proyecto-img" 15em / 1fr 1fr 1fr;
+    padding: 2em;
+    gap: 1em;
+}
+.proyecto-img{
+    grid-area: proyecto-img;
+}
+.proyecto-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: solid 2px #9daab7;
+}
+.proyecto-card{
+    grid-area: proyecto-card;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    border: solid 2px #9daab7;
+    border-radius: 10px;
+}
+.link-card{
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.black{
+    color: #000;
+}
+.text{
+    text-align: center;
+}
+.container-materias{
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 @media (max-width: 1024px){
     td{
