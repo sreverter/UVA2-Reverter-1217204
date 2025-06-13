@@ -116,6 +116,7 @@ function changeDarkMode() {
     navbar.style.backgroundColor = 'var(--color-secundario) !important';
     lightMode.classList.remove('hidden');
     darkMode.classList.add('hidden');
+    localStorage.setItem("theme", "dark");
 }
 
 function changeLightMode() {
@@ -126,10 +127,23 @@ function changeLightMode() {
     root.style.setProperty('--grid-color-terciary', '#add8e6');
     lightMode.classList.add('hidden');
     darkMode.classList.remove('hidden');
+    localStorage.setItem("theme", "light");
 }
 
-if (darkMode && lightMode) {
-    darkMode.addEventListener('click', changeDarkMode);
-    lightMode.addEventListener('click', changeLightMode);
-}
+// Verifica el tema guardado al cargar
+document.addEventListener('DOMContentLoaded', function () {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        changeDarkMode();
+    } else {
+        changeLightMode();
+    }
+
+    // Agrega los listeners después de que todo esté cargado
+    if (darkMode && lightMode) {
+        darkMode.addEventListener('click', changeDarkMode);
+        lightMode.addEventListener('click', changeLightMode);
+    }
+});
+
 
