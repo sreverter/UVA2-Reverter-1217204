@@ -111,6 +111,8 @@ function changeDarkMode() {
     root.style.setProperty('--color-principal', '#102a43');
     root.style.setProperty('--color-secundario', '#486581');
     root.style.setProperty('--font-color', '#fff');
+    root.style.setProperty('--grid-color-secondary', '#6f8ba5');
+    root.style.setProperty('--grid-color-terciary', '#829ab1');
     navbar.style.backgroundColor = 'var(--color-secundario) !important';
     lightMode.classList.remove('hidden');
     darkMode.classList.add('hidden');
@@ -120,6 +122,8 @@ function changeLightMode() {
     root.style.setProperty('--color-principal', '#446D9C');
     root.style.setProperty('--color-secundario', '#e6c39e');
     root.style.setProperty('--font-color', '#000');
+    root.style.setProperty('--grid-color-secondary', '#e0ffff');
+    root.style.setProperty('--grid-color-terciary', '#add8e6');
     lightMode.classList.add('hidden');
     darkMode.classList.remove('hidden');
 }

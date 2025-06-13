@@ -1,7 +1,9 @@
 :root{
     --color-principal: #446D9C;
     --color-secundario: #e6c39e;
-    --font-color: #000
+    --font-color: #000;
+    --grid-color-secondary: #e0ffff;
+    --grid-color-terciary: #add8e6;
 }
 
 
@@ -43,7 +45,7 @@ main{
 }
 
 .bibliografia{
-    background-color: lightblue;
+    background-color: var(--grid-color-terciary);
     grid-area: bibliografia;
     padding: 1em 3em;
     display: flex;
@@ -52,7 +54,7 @@ main{
 }
 
 .actividades{
-    background-color: lightcyan;
+    background-color: var(--grid-color-secondary);
     grid-area: actividades;
     padding: 1em 3em;
     display: flex;
