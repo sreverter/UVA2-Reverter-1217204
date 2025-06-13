@@ -110,6 +110,7 @@ const root = document.documentElement;
 function changeDarkMode() {
     root.style.setProperty('--color-principal', '#102a43');
     root.style.setProperty('--color-secundario', '#486581');
+    root.style.setProperty('--font-color', '#fff');
     navbar.style.backgroundColor = 'var(--color-secundario) !important';
     lightMode.classList.remove('hidden');
     darkMode.classList.add('hidden');
@@ -118,6 +119,7 @@ function changeDarkMode() {
 function changeLightMode() {
     root.style.setProperty('--color-principal', '#446D9C');
     root.style.setProperty('--color-secundario', '#e6c39e');
+    root.style.setProperty('--font-color', '#000');
     lightMode.classList.add('hidden');
     darkMode.classList.remove('hidden');
 }
